@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <style>
+        body{
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap; /*torje meg a sort*/
+        }
+        .boxResult{
+            width: 100%;
+            height: 3rem;
+            background-color: lightgray;
+            font-weight: bold;
+            text-align: right;
+            font-size: 2rem;
+        }
+        .box{
+            font-weight: bold;
+            text-align: center;
+            flex-basis: calc(25% - 4px); /*mennyi %-ot foglaljon el*/
+            background-color: gray;
+            margin: 2px;
+            height: 3rem;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .muvelet{
+            background-color: yellow;
+        }
+        .c{
+            background-color: blue;
+        }
+        .e{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxResult"></div>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box muvelet">+</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box muvelet">-</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box muvelet">*</div>
+    <div class="box c">C</div>
+    <div class="box">0</div>
+    <div class="box e">=</div>
+    <div class="box muvelet">/</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
